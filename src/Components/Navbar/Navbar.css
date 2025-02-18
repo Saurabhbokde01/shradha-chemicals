@@ -93,4 +93,27 @@
     color: #030B17 !important;
     background-color: white !important;
 }
-  
+
+/* ------menu-icon-------- */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add slight animation */
+.menu-icon:active {
+    transform: scale(0.9);
+}
+
+/* ------Responsive0Design------ */
+@media screen and (max-width: 800px) {
+    .navbar-right {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
